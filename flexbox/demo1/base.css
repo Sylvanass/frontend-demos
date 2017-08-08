@@ -1,4 +1,4 @@
-ul{
+ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -53,10 +53,10 @@ ul{
     margin: 8px;
 }
 
-.class3 li:nth-child(1){
+.class3 li:nth-child(1) {
     order: 2;
 }
 
-.class3 li:nth-child(3){
+.class3 li:nth-child(3) {
     order: 1;
 }
