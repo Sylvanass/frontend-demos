@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh_CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      justify-content: space-around;
+      font: 13px Helvetica, Arial;
+    }
+
+    .window {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 45%;
+      background: #000;
+    }
+
+    .window div {
+      width: 100%;
+      padding: 3px;
+    }
+
+    ul {
+      flex: 1;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      background: #eee;
+    }
+
+    li {
+      margin: 5px 10px;
+      padding: 5px 10px;
+    }
+
+    li span {
+      padding: 5px 10px;
+    }
+
+    .left span {
+      background-color: #fff;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .right span {
+      background-color: #4ca9ff;
+    }
+
+    input {
+      border: 0;
+      padding: 10px;
+      width: 83%;
+      margin-right: .5%;
+    }
+
+    button {
+      width: 15%;
+      background: rgb(130, 224, 255);
+      border: none;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+<div class="window">
+  <ul id="messages1"></ul>
+  <div>
+    <input id="edit1" type="text">
+    <button id="btn1">发送消息</button>
+  </div>
+</div>
+<div class="window">
+  <ul id="messages2"></ul>
+  <div>
+    <input id="edit2" type="text">
+    <button id="btn2">发送消息</button>
+  </div>
+</div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script>
+  const messages1 = $('#messages1');
+  const messages2 = $('#messages2');
+  const edit1 = $('#edit1');
+  const edit2 = $('#edit2');
+  const btn1 = $('#btn1');
+  const btn2 = $('#btn2');
+
+  let socket1 = io();
+  let socket2 = io();
+
+  btn1.on('click', function () {
+    let msg = edit1.val();
+    socket1.emit('message', msg);
+    edit1.val('');
+    messages1.append(`<li class="right"><span>${msg}</span></li>`);
+  });
+
+  socket1.on('message', function (msg) {
+    messages1.append(`<li class="left"><span>${msg}</span></li>`);
+  });
+
+  btn2.on('click', function () {
+    let msg = edit2.val();
+    socket2.emit('message', msg);
+    edit2.val('');
+    messages2.append(`<li class="right"><span>${msg}</span></li>`);
+  });
+
+  socket2.on('message', function (msg) {
+    messages2.append(`<li class="left"><span>${msg}</span></li>`);
+  });
+</script>
+</html>
