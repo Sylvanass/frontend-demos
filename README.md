@@ -16,19 +16,19 @@ $ git clone git@github.com:hezhii/frontend-demos.git
 2. [Flebox](#demo2-flexbox)
 3. [Notification](#demo3-Notification)
 
-## Demo1: Dynamic favicon
+### Demo1: Dynamic favicon
 
 [demo](http://www.whezh.com/frontend-demos/dynamic-favicon/) / [source](https://github.com/hezhii/frontend-demos/tree/master/dynamic-favicon)
 
 这是一个动态调整页面Favicon.icon的小案例，通过不断的点击页面中间的按钮，可以发现浏览器标签页上的图标在变化。
 
-## Demo2: Flexbox
+### Demo2: Flexbox
 
 [demo1](http://www.whezh.com/frontend-demos/flexbox/demo1) / [demo2](http://www.whezh.com/frontend-demos/flexbox/demo2)  / [source](https://github.com/hezhii/frontend-demos/tree/master/flexbox)
 
 这是我在学习flex布局时写的小demo。
 
-## Demo3: Notification
+### Demo3: Notification
 
 [demo](http://www.whezh.com/frontend-demos/notification/) / [source](https://github.com/hezhii/frontend-demos/tree/master/notification)
 
