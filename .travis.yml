@@ -1,12 +1,11 @@
 language: node_js
 node_js:
-- '6'
+  - '6'
 branches:
   only:
-  - master
+    - master
 before_install:
-  - openssl aes-256-cbc -K $encrypted_e9929cffcaea_key -iv $encrypted_e9929cffcaea_iv
-  -in ./travis/id_rsa.enc -out ~/.ssh/id_rsa -d
+  - openssl aes-256-cbc -K $encrypted_e9929cffcaea_key -iv $encrypted_e9929cffcaea_iv -in ./travis/id_rsa.enc -out ~/.ssh/id_rsa -d
 before_script:
   - chmod 600 ~/.ssh/id_rsa
   - eval $(ssh-agent)
