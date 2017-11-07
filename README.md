@@ -15,6 +15,7 @@ $ git clone git@github.com:hezhii/frontend-demos.git
 1. [Dynamic favicon](#demo1-dynamic-favicon)
 2. [Flebox](#demo2-flexbox)
 3. [Notification](#demo3-Notification)
+3. [Html Element Test](#demo4-html-element-test)
 
 ### Demo1: Dynamic favicon
 
@@ -33,3 +34,9 @@ $ git clone git@github.com:hezhii/frontend-demos.git
 [demo](http://www.whezh.com/frontend-demos/notification/) / [source](https://github.com/hezhii/frontend-demos/tree/master/notification)
 
 有一天，我打开优酷，发现弹出了一个申请通知的对话框，在我选择了允许之后，我发现电脑右上角出现了一个来自优酷的提示框。我觉得这很有趣，于是就有了这个小demo。
+
+### Demo4: Html Element Test
+
+[demo](http://www.whezh.com/frontend-demos/html-element-test/) / [source](https://github.com/hezhii/frontend-demos/tree/master/html-element-test)
+
+TODO

@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML Elements</title>
+</head>
+<body>
+<section>
+  <h2>blockquote -- 引用</h2>
+  <blockquote>
+    <p>床前明月光，疑是地上霜</p>
+    <cite>李白</cite>
+  </blockquote>
+</section>
+<section>
+  <h2>dl -- 描述列表，用来说明一个词汇</h2>
+</section>
+<dl>
+  <dt>Firefox</dt>
+  <dd>
+    A free, open source, cross-platform, graphical web browser
+    developed by the Mozilla Corporation and hundreds of volunteers.
+  </dd>
+</dl>
+<section>
+  <h2>figure -- 代表一段独立的内容，这个标签经常是在主文中引用的图片，插图，表格，代码段等等，作为一个独立的引用单元，添加或移除不影响文档</h2>
+  <figure>
+    <img src="https://developer.cdn.mozilla.net/media/img/mdn-logo-sm.png" alt="An awesome picture">
+    <figcaption>Fig1. MDN Logo</figcaption>
+  </figure>
+</section>
+<section>
+  <h2>main -- 文档&lt;body&gt;的主体部分，强调一个独立性，不应该包含如导航栏等在一系列文档中重复出现的内容</h2>
+</section>
+<section>
+  <h2>abbr -- 缩写内容，可以通过 title 属性添加详细的说明，IE6 不支持</h2>
+  <abbr title="Internationalization">I18N</abbr>
+</section>
+<section>
+  <h2>bdi -- 标签允许您设置一段文本，使其脱离其父元素的文本方向设置</h2>
+  <p dir="ltr">This arabic word
+    <bdi>ARABIC_PLACEHOLDER</bdi>
+    is automatically displayed right-to-left.
+  </p>
+</section>
+<section>
+  <h2>bdo -- 覆盖当前文本的朝向，它使得字符按给定的方向排列</h2>
+  <p>This text will go left to right.</p>
+  <p>这就不好意思了<bdo dir="rtl">This text will go right to left.</bdo></p>
+</section>
+<section>
+  <h2>data -- 将一个指定内容和机器可读的翻译联系在一起。但如果内容是与 time 或者 date 相关的，一定要使用 &lt;time&gt;</h2>
+  <p>新产品</p>
+  <ul>
+    <li>
+      <data value="3967381398">迷你番茄酱</data>
+    </li>
+    <li>
+      <data value="3967381399">巨无霸番茄酱</data>
+    </li>
+    <li>
+      <data value="3967381400">超级巨无霸番茄酱</data>
+    </li>
+  </ul>
+</section>
+<section>
+  <h2>dfn -- 定义一个专业术语，并且可以被引用</h2>
+  <!-- Define "The Internet" -->
+  <p><dfn id="def-internet">The Internet</dfn> is a global system of interconnected networks that use the Internet
+    Protocol Suite (TCP/IP) to serve billions of users worldwide.</p>
+  <dl>
+    <!-- Define "World-Wide Web" and reference definition for "the Internet" -->
+    <dt>
+      <dfn>
+        <abbr title="World-Wide Web">WWW</abbr>
+      </dfn>
+    </dt>
+    <dd>The World-Wide Web (WWW) is a system of interlinked hypertext documents accessed on <a href="#def-internet">the
+      Internet</a>.
+    </dd>
+  </dl>
+</section>
+<section>
+  <h2>kbd -- 用于表示用户输入，它将产生一个行内元素，以浏览器的默认monospace字体显示</h2>
+  <p>Type the following in the Run dialog: <kbd>cmd</kbd><br/>Then click the OK button.</p>
+  <p>Save the document by pressing <kbd>Ctrl</kbd> + <kbd>S</kbd></p>
+</section>
+<section>
+  <h2>mark -- 标签代表突出显示的文字，高亮显示</h2>
+  <p>非 mark 文字
+    <mark> mark 文字</mark>
+  </p>
+</section>
+<section>
+  <h2>q -- 引用，短文本，如果是长文本，推荐使用 blockquote</h2>
+</section>
+<section>
+  <h2>ruby -- 被用来展示东亚文字注音或字符注释。</h2>
+  <ruby>
+    汉
+    <rp>(</rp>
+    <rt>Han</rt>
+    <rp>)</rp>
+    字
+    <rp>(</rp>
+    <rt>zi</rt>
+    <rp>)</rp>
+  </ruby>
+</section>
+<section>
+  <h2>smap -- 标识计算机程序输出</h2>
+  <p>Regular text. <samp>This is sample text.</samp> Regular text.</p>
+</section>
+<section>
+  <h2>sub -- 下标</h2>
+  <p>The chemical formula of water: H<sub>2</sub>O</p>
+</section>
+<section>
+  <h2>sup -- 上标</h2>
+  <p>2<sup>2</sup></p>
+</section>
+<section>
+  <h2>var -- 表示变量的名称，或者由用户提供的值，斜体</h2>
+  <p> A simple equation: <var>x</var> = <var>y</var> + 2 </p>
+</section>
+<section>
+  <h2>map -- map 与 area 一起使用来定义一个图像映射(一个可点击的链接区域).</h2>
+  <map name="primary">
+    <area shape="circle" coords="200,250,25" href="another.htm"/>
+    <area shape="default" nohref/>
+  </map>
+</section>
+<section>
+  <h2>audio -- 音频</h2>
+  <audio src="http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg" autoplay>
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+</section>
+<section>
+  <h2>video -- 视频</h2>
+  <video src="videofile.ogg" autoplay poster="posterimage.jpg">
+    抱歉，您的浏览器不支持内嵌视频，不过不用担心，你可以 <a href="videofile.ogg">下载</a>
+    并用你喜欢的播放器观看!
+  </video>
+</section>
+<section>
+  <h2>del -- 表达式已删除的内容，与 s 标签的区别在于：del 通常用于表示文档编辑（删除文档中的那些内容），强调删除；s 则表示一些过时、不需要的东西，相当于是标记</h2>
+  <p>
+    <del>This text has been deleted</del>
+    , here is the rest of the paragraph.
+  </p>
+  <del><p>This paragraph has been deleted.</p></del>
+</section>
+<section>
+  <h2>ins -- insert 的简写，与 del 相反，代表插入的内容。</h2>
+  <ins>这一段文本是新插入至文档的。</ins>
+</section>
+<section>
+  <h2>table -- 表格。包括：caption(标题)、col(列)、colgroup(一组列)、tbody(表体)、td(单元格)、tfoot(表格底部)、th(表头单元格)、thead(表头)、tr(行)</h2>
+  <table>
+    <caption>表格标题</caption>
+    <thead>
+    <tr>
+      <th>表头1</th>
+      <th>表头2</th>
+      <th>表头3</th>
+      <th>表头4</th>
+      <th>表头5</th>
+    </tr>
+    </thead>
+    <colgroup span="3" valign="top">
+      <col width="50" bgcolor="maroon"/>
+      <col width="100" bgcolor="olive"/>
+      <col width="150" bgcolor="teal"/>
+    </colgroup>
+    <colgroup span="2" valign="right" bgcolor="red"></colgroup>
+    <tbody>
+    <tr>
+      <td>第一行1</td>
+      <td>第一行2</td>
+      <td>第一行3</td>
+      <td>第一行4</td>
+      <td>第一行5</td>
+    </tr>
+    <tr>
+      <td>第二行1</td>
+      <td>第二行2</td>
+      <td>第二行3</td>
+      <td>第二行4</td>
+      <td>第二行5</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+      <td>表注1</td>
+      <td>表注2</td>
+      <td>表注3</td>
+      <td>表注4</td>
+      <td>表注5</td>
+    </tr>
+    </tfoot>
+  </table>
+</section>
+<section>
+  <h2>datalist -- 包含了一组 option 元素，表示其他表单控件的可选值</h2>
+  <label>Choose a browser from this list:
+    <input list="browsers" name="myBrowser"/></label>
+  <datalist id="browsers">
+    <option value="Chrome">
+    <option value="Firefox">
+    <option value="Internet Explorer">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</section>
+<section>
+  <h2>fieldset -- 用来对表单中的控制元素进行分组(也包括 label 元素),类似于 formgroup</h2>
+  <form action="test.php" method="post">
+    <fieldset>
+      <legend>Title</legend>
+      <input type="radio" id="radio"> <label for="radio">Click me</label>
+    </fieldset>
+  </form>
+</section>
+<section>
+  <h2>meter -- 用来显示百分比，有点像进度条</h2>
+  <p>Heat the oven to
+    <meter min="200" max="500" value="350">350 degrees</meter>
+  </p>
+</section>
+<section>
+  <h2>optgroup -- 创建包含在一个 select 元素中的一组选项</h2>
+  <select>
+    <optgroup label="Group 1">
+      <option>Option 1.1</option>
+    </optgroup>
+    <optgroup label="Group 2">
+      <option>Option 2.1</option>
+      <option>Option 2.2</option>
+    </optgroup>
+    <optgroup label="Group 3" disabled>
+      <option>Option 3.1</option>
+      <option>Option 3.2</option>
+      <option>Option 3.3</option>
+    </optgroup>
+  </select>
+</section>
+<section>
+  <h2>output -- 表示计算或用户操作的结果</h2>
+  <form oninput="result.value=parseInt(a.value)+parseInt(b.value);">
+    <input type="range" name="b" value="50"/> +
+    <input type="number" name="a" value="10"/> =
+    <output name="result"></output>
+  </form>
+</section>
+<section>
+  <h2>progress -- 用来显示一项任务的完成进度,没有规定具体如何显示，但通常是进度条</h2>
+  <progress value="70" max="100">70 %</progress>
+</section>
+<section>
+  <h2>details -- 用作发现小部件，用户可以从其中检索附加信息</h2>
+  <details>
+    <summary>Some details</summary>
+    <p>More info about the details.</p>
+  </details>
+</section>
+<section>
+  <h2>dialog -- 表示一个对话框或其他交互式组件</h2>
+  <dialog open>
+    <p>Greetings, one and all!</p>
+  </dialog>
+</section>
+</body>
+</html>
