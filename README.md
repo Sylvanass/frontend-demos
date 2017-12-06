@@ -19,24 +19,24 @@ $ git clone git@github.com:hezhii/frontend-demos.git
 
 ### Demo1: Dynamic favicon
 
-[demo](http://www.whezh.com/frontend-demos/dynamic-favicon/) / [source](https://github.com/hezhii/frontend-demos/tree/master/dynamic-favicon)
+[demo](https://hezhii.github.io/frontend-demos/dynamic-favicon/) / [source](https://github.com/hezhii/frontend-demos/tree/master/dynamic-favicon)
 
 这是一个动态调整页面Favicon.icon的小案例，通过不断的点击页面中间的按钮，可以发现浏览器标签页上的图标在变化。
 
 ### Demo2: Flexbox
 
-[demo1](http://www.whezh.com/frontend-demos/flexbox/demo1) / [demo2](http://www.whezh.com/frontend-demos/flexbox/demo2)  / [source](https://github.com/hezhii/frontend-demos/tree/master/flexbox)
+[demo1](https://hezhii.github.io/frontend-demos/flexbox/demo1) / [demo2](http://www.whezh.com/frontend-demos/flexbox/demo2)  / [source](https://github.com/hezhii/frontend-demos/tree/master/flexbox)
 
 这是我在学习flex布局时写的小demo。
 
 ### Demo3: Notification
 
-[demo](http://www.whezh.com/frontend-demos/notification/) / [source](https://github.com/hezhii/frontend-demos/tree/master/notification)
+[demo](https://hezhii.github.io/frontend-demos/notification/) / [source](https://github.com/hezhii/frontend-demos/tree/master/notification)
 
 有一天，我打开优酷，发现弹出了一个申请通知的对话框，在我选择了允许之后，我发现电脑右上角出现了一个来自优酷的提示框。我觉得这很有趣，于是就有了这个小demo。
 
 ### Demo4: HTML Element Test
 
-[demo](http://www.whezh.com/frontend-demos/html-element-test/) / [source](https://github.com/hezhii/frontend-demos/tree/master/html-element-test)
+[demo](https://hezhii.github.io/frontend-demos/html-element-test/) / [source](https://github.com/hezhii/frontend-demos/tree/master/html-element-test)
 
 HTML 元素列表，包括了各种元素的介绍、基本使用、特性等。记录了我在熟悉 HTML 各种元素过程中进行的一些测试。
